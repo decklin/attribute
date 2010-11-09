@@ -1,0 +1,15 @@
+{
+  "name": "Attribute",
+  "version": "1.0",
+  "description": "Set URL attributes on the BODY element for stylesheets",
+  "content_scripts": [
+    {
+      "js": [ "attribute.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "permissions": [
+  ]
+}
