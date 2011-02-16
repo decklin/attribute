@@ -1,0 +1,16 @@
+Attribute
+=========
+
+This exists entirely as a hack around the lack of a document selector in
+Webkit:
+
+    https://bugs.webkit.org/show_bug.cgi?id=51172
+
+I write all my user stylesheets in Sass, so I place everything under:
+
+    html[hostname="example.org"]
+
+If you do them by hand, prepending this to every selector will probably
+get annoying. There's also no good way to match both example.org and
+*.example.org (I usually give up and use hostname$=, but that also
+matches badexample.org. What do you you want, it's a kludge).
